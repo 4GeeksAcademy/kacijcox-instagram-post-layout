@@ -1,30 +1,143 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Feed</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
 <body>
-
-<div class="post">
-    <div class="post-header">
-        <i class="fa fa-brands fa-html5"></i>
-        <i class="fa-solid fa-ellipsis"></i>
-        <div class="aside">HTML5<br>Rigoberto</div>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <i class="fab fa-instagram mr-1"></i>
+                <span>Instagram</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#new-post-modal">
+                            Create a New Post
+                        </button>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-secondary" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-cog"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Accessibility</a></li>
+                            <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Log Out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="modal" tabindex="-1" id="new-post-modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Create a new post</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+              <p>Caption:</p>
+              <div class="input-group">
+                <textarea class="form-control" aria-label="With textarea">Add the caption of your post here</textarea>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
     </div>
-    <div class="post-image">
-        <img src="https://preview.redd.it/tried-creating-the-sunrise-between-mountain-scenery-that-i-v0-98uh40rotny91.jpg?width=640&crop=smart&auto=webp&s=fbc1054d76b8a0eb048242697eb0163095ce985f">
+    <div class="mode">
+        <a href="index.html" class="mode_btn"><i class="fas fa-table"></i></a>
+        <a href="solid.html" class="mode_btn"><i class="fas fa-square"></i></a>
     </div>
-    <div class="post-icons">
-        <i class="fa fa-regular fa-heart"></i>
-        <i class="fa fa-regular fa-message"></i>
-        <i class="fa fa-regular fa-paper-plane"></i>
-        <i class="fa fa-regular fa-bookmark"></i>
+    <div class="container">
+        <div class="card mt-2 mx-auto" style="width: 20rem;">
+            <div class="d-flex justify-content-between m-1;">
+            <h4 class="card-title">My cat</h4>
+            <h6 class="card-date">10/16</h6>
+            </div>
+            <img class="card-img-top" src="https://cdn.britannica.com/25/172925-050-DC7E2298/black-cat-back.jpg">
+            <div class="card-body">
+                <p class="card-image-footer"><b>100 Likes</b></p>
+                <p class="card-text">Description</p>
+            </div>
+        </div>
+        <div class="card mt-2 mx-auto" style="width: 20rem;">
+            <div class="d-flex justify-content-between m-1;">
+            <h4 class="card-title">My cat</h4>
+            <h6 class="card-date">10/16</h6>
+            </div>
+            <img class="card-img-top" src="https://cdn.britannica.com/25/172925-050-DC7E2298/black-cat-back.jpg">
+            <div class="card-body">
+                <p class="card-image-footer"><b>100 Likes</b></p>
+                <p class="card-text">Description</p>
+            </div>
+        </div>
+        <div class="card mt-2 mx-auto" style="width: 20rem;">
+            <div class="d-flex justify-content-between m-1;">
+            <h4 class="card-title">My cat</h4>
+            <h6 class="card-date">10/16</h6>
+            </div>
+            <img class="card-img-top" src="https://cdn.britannica.com/25/172925-050-DC7E2298/black-cat-back.jpg">
+            <div class="card-body">
+                <p class="card-image-footer"><b>100 Likes</b></p>
+                <p class="card-text">Description</p>
+            </div>
+        </div>
+        <div class="card mt-2 mx-auto" style="width: 20rem;">
+            <div class="d-flex justify-content-between m-1;">
+            <h4 class="card-title">My cat</h4>
+            <h6 class="card-date">10/16</h6>
+            </div>
+            <img class="card-img-top" src="https://cdn.britannica.com/25/172925-050-DC7E2298/black-cat-back.jpg">
+            <div class="card-body">
+                <p class="card-image-footer"><b>100 Likes</b></p>
+                <p class="card-text">Description</p>
+            </div>
+        </div>
+        <div class="card mt-2 mx-auto" style="width: 20rem;">
+            <div class="d-flex justify-content-between m-1;">
+            <h4 class="card-title">My cat</h4>
+            <h6 class="card-date">10/16</h6>
+            </div>
+            <img class="card-img-top" src="https://cdn.britannica.com/25/172925-050-DC7E2298/black-cat-back.jpg">
+            <div class="card-body">
+                <p class="card-image-footer"><b>100 Likes</b></p>
+                <p class="card-text">Description</p>
+            </div>
+        </div>
+        <div class="card mt-2 mx-auto" style="width: 20rem;">
+            <div class="d-flex justify-content-between m-1;">
+            <h4 class="card-title">My cat</h4>
+            <h6 class="card-date">10/16</h6>
+            </div>
+            <img class="card-img-top" src="https://cdn.britannica.com/25/172925-050-DC7E2298/black-cat-back.jpg">
+            <div class="card-body">
+                <p class="card-image-footer"><b>100 Likes</b></p>
+                <p class="card-text">Description</p>
+            </div>
+        </div>
     </div>
-    <div class="post-body">
-        <p>Liked by <b>4GeeksAcademy, html5, Web</b> and <b>100,000 others</b></p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-    </div>
+    <script src="https://kit.fontawesome.com/05fa1878ea.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
